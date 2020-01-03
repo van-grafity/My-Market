@@ -3,8 +3,9 @@ import { View, Text } from 'react-native';
 
 import { TextInput } from 'react-native-gesture-handler'
 import { Container, Tabs, Tab } from 'native-base'
-import Detail from './Detail'
+import Register from './Register'
 import ForgotPassword from './ForgotPassword'
+import Verification from './Verification'
 
 export default class Home extends Component {
     constructor(props) {
@@ -17,32 +18,32 @@ export default class Home extends Component {
         return (
             <View style={{ flex: 1 }}>
                 <View style={{ alignItems: 'center', borderRadius: 20, paddingHorizontal: 16, borderColor: "#E0E0E0", borderWidth: 1, marginVertical: 8, marginHorizontal: 16, height: 40 }}>
-                    <TextInput style={{ flex: 1, height: 40, fontSize: 14, fontFamily: 'Ubuntu-Medium', color: "#000000" }}
+                    <TextInput style={{ flex: 1, height: 40, fontSize: 14, color: "#000000" }}
                         underlineColorAndroid={'transparent'}
                         placeholder='Search here'
                         onChangeText={(text) => this.setState({ text: text })}
                     />
                 </View>
-             
-                    <Container>
-                        <Tabs
-                            onChangeTab={(i, ref) => this.setState({ numOfTab: i.i })}
-                            tabBarUnderlineStyle={{ backgroundColor: '#00D79E', height: 2 }}>
 
-                            <Tab heading='Register'>
-                                <Detail
-                                    navigation={this.props.navigation}
-                                />
-                            </Tab>
-                            <Tab heading='ForgotPassword'>
-                                <ForgotPassword
-                                    navigation={this.props.navigation}
-                                />
-                            </Tab>
+                <Container>
+                    <Tabs
+                        onChangeTab={(i, ref) => this.setState({ numOfTab: i.i })}
+                        tabBarUnderlineStyle={{ backgroundColor: '#00D79E', height: 2 }}>
 
-                        </Tabs>
-                    </Container>
-                
+                        <Tab heading='Verification'>
+                            <Verification
+                                navigation={this.props.navigation}
+                            />
+                        </Tab>
+                        <Tab heading='ForgotPassword'>
+                            <ForgotPassword
+                                navigation={this.props.navigation}
+                            />
+                        </Tab>
+
+                    </Tabs>
+                </Container>
+
             </View>
         );
     }

@@ -9,6 +9,8 @@ import Register from './view/Register'
 import ForgotPassword from './view/ForgotPassword'
 import Home from './view/Home'
 import Detail from './view/Detail'
+import Verification from './view/Verification'
+    import { Form } from 'native-base';
 
 const WelcomeStack = createStackNavigator({
     Welcome: { screen: Welcome }
@@ -19,6 +21,7 @@ const WelcomeStack = createStackNavigator({
 const LoginStack = createStackNavigator({
     Login: { screen: Login },
     Register: { screen: Register },
+    Verification: {screen: Verification},
     ForgotPassword: { screen: ForgotPassword },
     Home: { screen: Home },
     Detail: { screen: Detail }
