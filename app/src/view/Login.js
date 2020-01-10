@@ -10,8 +10,8 @@ export default class Login extends Component {
     };
   }
 
-  isHome = () => {
-    this.props.navigation.navigate('Home')
+  showDashboard = () => {
+    this.props.navigation.navigate('Dashboard')
   }
 
   onBlur = () => {
@@ -80,7 +80,7 @@ export default class Login extends Component {
 
         <Button
           title='Login'
-          onPress={this.isHome}
+          onPress={this.showDashboard}
           onBlur={this.onBlur}
           onFocus={this.onFocus}
         />

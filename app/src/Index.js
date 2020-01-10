@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { Root } from 'native-base'
-import InitialStack from './Route'
+import AppNavigator from './route'
 
 export default class Index extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ export default class Index extends Component {
     render() {
         return (
             <Root>
-                <InitialStack />
+                <AppNavigator />
             </Root>
         );
     }

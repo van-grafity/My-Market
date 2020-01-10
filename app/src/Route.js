@@ -10,31 +10,32 @@ import ForgotPassword from './view/ForgotPassword'
 import Home from './view/Home'
 import Detail from './view/Detail'
 import Verification from './view/Verification'
-    import { Form } from 'native-base';
+import Dashboard from './view/Dashboard'
 
 const WelcomeStack = createStackNavigator({
     Welcome: { screen: Welcome }
 }, {
-        headerMode: 'none'
-    })
+    headerMode: 'none'
+})
 
 const LoginStack = createStackNavigator({
     Login: { screen: Login },
     Register: { screen: Register },
-    Verification: {screen: Verification},
+    Verification: { screen: Verification },
     ForgotPassword: { screen: ForgotPassword },
     Home: { screen: Home },
-    Detail: { screen: Detail }
+    Detail: { screen: Detail },
+    Dashboard: {screen: Dashboard}
 }, {
-        headerMode: 'none'
-    })
+    headerMode: 'none'
+})
 
 const InitialStack = createStackNavigator({
     WelcomeStack: { screen: WelcomeStack },
     LoginStack: { screen: LoginStack }
 }, {
-        initialRouteName: 'WelcomeStack',
-        headerMode: 'none'
-    })
+    initialRouteName: 'WelcomeStack',
+    headerMode: 'none'
+})
 
 export default createAppContainer(InitialStack)
