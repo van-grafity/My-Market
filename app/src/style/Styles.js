@@ -429,5 +429,98 @@ export const styles = StyleSheet.create({
         fontFamily: "Ubuntu-Medium",
         fontSize: 18,
         color: "#00D79E"
+    },
+    shadow: {
+        backgroundColor: '#FFFFFF',
+        shadowOffset:{  width: 0,  height: 0 },
+        shadowColor: '#000000',
+        //shadowColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOpacity: 0.25,
+        shadowRadius: 5,
+        elevation:5
+    },
+    cardView: {
+        margin:20,
+        backgroundColor: '#FFFFFF',
+        shadowOffset:{  width: 0,  height: 0 },
+        shadowColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOpacity: 0.25,
+        shadowRadius: 5,
+        borderRadius:15
+    },
+    card: {
+        backgroundColor: '#FFFFFF',
+        shadowOffset:{  width: 0,  height: 0 },
+        shadowColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOpacity: 0.25,
+        shadowRadius: 5,
+    },
+    shorcut: {
+        backgroundColor: '#FFFFFF',
+        shadowOffset:{  width: 0,  height: 0 },
+        shadowColor: 'rgba(0, 0, 0, 0.25)',
+        shadowOpacity: 0.25,
+        shadowRadius: 5,
+        height:48,
+        width:48,
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    contentContainer:{
+        flex:1,
+        margin:8,
+        backgroundColor: '#FFFFFF',
+        // shadowOffset:{  width: 0,  height: 0 },
+        // shadowColor: 'rgba(0, 0, 0, 16)',
+        // shadowOpacity: 0.25,
+        // shadowRadius: 5,
+    },
+    textTitle:{
+        fontFamily:"Ubuntu-Regular",
+        fontSize:12,
+        color:"#000000"
+    },
+    textName:{
+        fontFamily:"Ubuntu-Medium",
+        fontSize:10,
+        color:"#2F82C7"
+    },
+    textAddress:{
+        fontFamily:"Ubuntu-Light",
+        fontSize:10,
+        color:"#000000"
+    },
+    textGender:{
+        fontFamily:"Ubuntu-Regular",
+        fontSize:8,
+        color:"#FFFFFF"
+    },
+    iconFavorite:{
+        backgroundColor:"#FFFFFF",
+        justifyContent:"center",
+        alignItems:"center",
+        borderRadius:15,
+        width:30,
+        height:30,
+        top:4,
+        right:4,
+        position:"absolute",
+        zIndex:1
+    },
+    containerGender:{
+        backgroundColor:"#6A6A6A",
+        justifyContent:"center",
+        alignItems:"center",
+        paddingHorizontal:12,
+        height:17,
+        top:0,
+        left:0,
+        position:"absolute",
+        zIndex:1
+    },
+    textFilter:{
+        fontFamily:"Ubuntu-Medium",
+        fontSize:18,
+        color:"#00D79E"
     }
 });

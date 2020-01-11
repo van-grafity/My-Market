@@ -11,6 +11,7 @@ import Home from './view/Home'
 import Detail from './view/Detail'
 import Verification from './view/Verification'
 import Dashboard from './view/Dashboard'
+import Places from './view/Places'
 
 const WelcomeStack = createStackNavigator({
     Welcome: { screen: Welcome }
@@ -25,7 +26,8 @@ const LoginStack = createStackNavigator({
     ForgotPassword: { screen: ForgotPassword },
     Home: { screen: Home },
     Detail: { screen: Detail },
-    Dashboard: {screen: Dashboard}
+    Dashboard: {screen: Dashboard},
+    Places: {screen: Places}
 }, {
     headerMode: 'none'
 })
